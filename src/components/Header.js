@@ -1,17 +1,25 @@
-import React from 'react';
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 const Header = () => {
-    return (
-        <Container>
-            Header
-        </Container>
-    );
-}
+  return (
+    <Nav>
+      <Logo src="./images/logo.svg" />
+      <NavMenu></NavMenu>
+    </Nav>
+  );
+};
 
 export default Header;
 
-const Container = styled.div`
-background: black;
-height:70px;
+const Nav = styled.div`
+display:flex;
+align-items:center;
+padding: 0 36px;
+  background: black;
+  height: 70px;
+`;
+const Logo = styled.img`
+  width: 80px;
+`;
+const NavMenu = styled.div``;
 
-`
