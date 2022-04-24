@@ -1,9 +1,10 @@
 import React from 'react';
+import ImageSlider from '../components/ImageSlider';
 import styled from 'styled-components'
 const Home = () => {
     return (
         <Container>
-            home
+        <ImageSlider/>
         </Container>
     );
 }
@@ -23,7 +24,7 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-// z-index: -1;
+z-index: -1;
 }
 
 `
