@@ -41,7 +41,7 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   padding: 0 36px;
-  background: #090b13;
+  background: #090b13 ;
   height: 70px;
   overflow-z:hidden;
 `;
