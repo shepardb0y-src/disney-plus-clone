@@ -9,10 +9,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Header />
-      <Routes>
+   <Header />
+      <Routes>   
         <Route path="/" element={<Home />} />
-
         <Route path="/detail" element={<Detail />} />
       </Routes>
     </div>
