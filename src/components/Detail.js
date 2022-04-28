@@ -7,7 +7,9 @@ const Detail = () => {
             <Background>
                 <img src="/images/boa-background.jpg" alt="img" />
             </Background>
-            <ImageTitle></ImageTitle>
+            <ImageTitle>
+                <img src="/images/bao-text.png" alt="" />
+            </ImageTitle>
         </Container>
     );
 }
@@ -21,7 +23,19 @@ position:relative;
 // padding: 0 calc(3.5vw + 5px);
 `
 const ImageTitle = styled.div`
-
+height:100vh;
+width:100vw;
+z-index-1;
+position:fixed;
+img{
+    top:10;
+    right:10;
+    margin-top:5%;
+    width: 30%;
+    height: 30%;
+    // object-fit: cover;
+    z-index-1;
+}
 `
 
 
@@ -35,6 +49,7 @@ z-index-1;
 opacity:0.8;
 width: 100%;
 height: 90%;
+
 
 
 img{
