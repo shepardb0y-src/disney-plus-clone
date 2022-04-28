@@ -5,8 +5,9 @@ const Detail = () => {
     return (
         <Container>
             <Background>
-                <img src="/images/2019-12-08.png" alt="img" />
+                <img src="/images/boa-background.jpg" alt="img" />
             </Background>
+            <ImageTitle></ImageTitle>
         </Container>
     );
 }
@@ -15,9 +16,12 @@ export default Detail;
 
 
 const Container = styled.div`
-min-height: calc(100vh - 70px);
+// min-height: calc(100vh - 70px);
 position:relative;
-padding: 0 calc(3.5vw + 5px);
+// padding: 0 calc(3.5vw + 5px);
+`
+const ImageTitle = styled.div`
+
 `
 
 
@@ -29,6 +33,8 @@ position: fixed;
 // right:0;
 z-index-1;
 opacity:0.8;
+width: 100%;
+height: 90%;
 
 
 img{
