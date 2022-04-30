@@ -10,6 +10,17 @@ const Detail = () => {
             <ImageTitle>
                 <img src="/images/bao-text.png" alt="" />
             </ImageTitle>
+            <Controls>
+                <PlayButton>
+                </PlayButton>
+                <TrailerButton>
+                </TrailerButton>
+                <AddButton>
+                </AddButton>
+                <GroupWatchButton>
+
+                </GroupWatchButton>
+            </Controls>
         </Container>
     );
 }
@@ -33,7 +44,7 @@ img{
     margin-top:5%;
     width: 30%;
     height: 30%;
-    // object-fit: cover;
+    object-fit: contain;
     z-index-1;
 }
 `
@@ -58,4 +69,16 @@ img{
     object-fit: cover;
     z-index-1;
 }
+`
+const Controls =styled.div`
+
+`
+const PlayButton =styled.div`
+
+`
+const TrailerButton =styled.div`
+
+`
+const AddbButton =styled.div`
+
 `
