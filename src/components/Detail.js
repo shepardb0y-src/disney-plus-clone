@@ -13,8 +13,11 @@ const Detail = () => {
             <Controls>
                 <PlayButton>
                     <img src="/images/play-icon-black.png" alt="" />
+                    <span>PLAY</span>
+                  
                 </PlayButton>
-                <TrailerButton>
+                <TrailerButton>  <img src="/images/play-icon-white.png" alt="" />
+                    <span>Trailer</span>
                 </TrailerButton>
                 <AddButton>
                 </AddButton>
@@ -72,18 +75,18 @@ img{
 }
 `
 const Controls =styled.div`
- z-index:-1;
+//  z-index:-1;
  
 `
-const PlayButton =styled.div`
+const PlayButton =styled.button`
 
 `
-const TrailerButton =styled.div`
+const TrailerButton =styled.button`
 
 `
-const AddButton =styled.div`
+const AddButton =styled.button`
 
 `
-const GroupWatchButton =styled.div`
+const GroupWatchButton =styled.button`
 
 `
