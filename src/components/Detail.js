@@ -12,6 +12,7 @@ const Detail = () => {
             </ImageTitle>
             <Controls>
                 <PlayButton>
+                    <img src="/images/play-icon-black.png" alt="" />
                 </PlayButton>
                 <TrailerButton>
                 </TrailerButton>
@@ -56,7 +57,7 @@ position: fixed;
 // left:0;
 // bottom:0;
 // right:0;
-z-index-1;
+z-index:-1;
 opacity:0.8;
 width: 100%;
 height: 90%;
@@ -67,11 +68,12 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index-1;
+    z-index:-1;
 }
 `
 const Controls =styled.div`
-
+ z-index:-1;
+ 
 `
 const PlayButton =styled.div`
 
@@ -79,6 +81,9 @@ const PlayButton =styled.div`
 const TrailerButton =styled.div`
 
 `
-const AddbButton =styled.div`
+const AddButton =styled.div`
+
+`
+const GroupWatchButton =styled.div`
 
 `
