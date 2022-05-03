@@ -26,6 +26,12 @@ const Detail = () => {
             <img src="/images/group-icon.png" alt="" />
         </GroupWatchButton>
       </Controls>
+      <Subtitles>
+       2018 * 7m * Family, Fantasy, Kids, Animation
+      </Subtitles>
+      <Description>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit repellat iusto sequi nam explicabo doloribus reiciendis. Atque optio, dolore facere corrupti soluta harum laborum eos.
+          </Description>
     </Container>
   );
 };
@@ -35,7 +41,9 @@ export default Detail;
 const Container = styled.div`
   // min-height: calc(100vh - 70px);
   position: relative;
+  
   // padding: 0 calc(3.5vw + 5px);
+  
 `;
 const ImageTitle = styled.div`
 height:100vh;
@@ -75,6 +83,9 @@ const Controls = styled.div`
   display: flex;
   cursor: pointer;
   align-items:center;
+  margin-left:20px;
+  
+  
 `;
 const PlayButton = styled.button`
   border-radius: 4px;
@@ -90,6 +101,7 @@ const PlayButton = styled.button`
   margin-right: 22px;
   // z-index:-1;
   cursor: pointer;
+  
   &:hover{
       background: rgb(198,198,198);
   }
@@ -118,18 +130,23 @@ span{
 margin-top: 275px;
 `
 const GroupWatchButton = styled(AddButton)`
-// border-radius: 4px;
-// margin-top: 275px;
-// font-size: 15px;
-// padding: 0px 24px;
 display: flex;
-// align-items: center;
-// height: 56px;
 background: rgba (0, 0, 0);
-// border: none;
-// letter-spacing: 1.8px;
-// margin-right: 22px;
-// // z-index:-1;
-// cursor: pointer;
+
+
+`
+const Subtitles = styled.div`
+margin-left:20px;
+color:rgb(249, 249, 249);
+font-size:15px;
+min-height:20px;
+margin-top:26px;
+
+`
+const Description = styled.div`
+margin-top:16px;
+line-height:1.4;
+margin-left:20px;
+color: rgb(249, 249, 249);
 
 `
