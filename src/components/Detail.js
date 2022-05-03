@@ -22,7 +22,9 @@ const Detail = () => {
         <AddButton>
             <span>+</span>
         </AddButton>
-        <GroupWatchButton></GroupWatchButton>
+        <GroupWatchButton>
+            <img src="/images/group-icon.png" alt="" />
+        </GroupWatchButton>
       </Controls>
     </Container>
   );
@@ -72,6 +74,7 @@ const Background = styled.div`
 const Controls = styled.div`
   display: flex;
   cursor: pointer;
+  align-items:center;
 `;
 const PlayButton = styled.button`
   border-radius: 4px;
@@ -114,20 +117,19 @@ span{
 }
 margin-top: 275px;
 `
-
-
-
-const GroupWatchButton = styled.button`
-border-radius: 4px;
-margin-top: 275px;
-font-size: 15px;
-padding: 0px 24px;
+const GroupWatchButton = styled(AddButton)`
+// border-radius: 4px;
+// margin-top: 275px;
+// font-size: 15px;
+// padding: 0px 24px;
 display: flex;
-align-items: center;
-height: 56px;
-background: rgb (249, 249, 249);
-border: none;
-letter-spacing: 1.8px;
-margin-right: 22px;
-// z-index:-1;
-cursor: pointer;`;
+// align-items: center;
+// height: 56px;
+background: rgba (0, 0, 0);
+// border: none;
+// letter-spacing: 1.8px;
+// margin-right: 22px;
+// // z-index:-1;
+// cursor: pointer;
+
+`
