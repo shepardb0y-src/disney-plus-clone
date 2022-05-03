@@ -19,7 +19,9 @@ const Detail = () => {
           <img src="/images/play-icon-white.png" alt="" />
           <span>Trailer</span>
         </TrailerButton>
-        <AddButton></AddButton>
+        <AddButton>
+            <span>+</span>
+        </AddButton>
         <GroupWatchButton></GroupWatchButton>
       </Controls>
     </Container>
@@ -85,36 +87,36 @@ const PlayButton = styled.button`
   margin-right: 22px;
   // z-index:-1;
   cursor: pointer;
+  &:hover{
+      background: rgb(198,198,198);
+  }
 `;
-const TrailerButton = styled.button`  
-border-radius: 4px;
-margin-top: 275px;
-font-size: 15px;
-padding: 0px 24px;
-display: flex;
-align-items: center;
-height: 56px;
-background: rgb (249, 249, 249);
-border: none;
-letter-spacing: 1.8px;
-margin-right: 22px;
-// z-index:-1;
-cursor: pointer;
+const TrailerButton = styled(PlayButton)`  
+background: rgb(0,0,0,0.3);
+border: 1px solid rgb(249,249,249);
+color: rgb(249, 249, 249);
+text-transform:uppercase;
 `;
-const AddButton = styled.button
-`border-radius: 4px;
+const AddButton = styled.button`
+width:44px;
+height:44px;
+display-flex:
+align-items:center;
+justify-content:center;
+border-radius:50%;
+border: 2px solid white;
+background-color: rgba(0,0,0,0.6);
+cursor:pointer;
+margin-right:16px;
+span{
+    font-size:30px;
+    color:white;
+}
 margin-top: 275px;
-font-size: 15px;
-padding: 0px 24px;
-display: flex;
-align-items: center;
-height: 56px;
-background: rgb (249, 249, 249);
-border: none;
-letter-spacing: 1.8px;
-margin-right: 22px;
-// z-index:-1;
-cursor: pointer;`;
+`
+
+
+
 const GroupWatchButton = styled.button`
 border-radius: 4px;
 margin-top: 275px;
